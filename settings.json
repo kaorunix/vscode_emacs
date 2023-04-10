@@ -81,14 +81,45 @@
 },
 // Emacs keybindings with incremental search
 {
-    "key": "ctrl+s",
-    "command": "actions.find",
-    "when": "editorTextFocus && !editorReadonly"
+  "key": "ctrl+s",
+  "command": "editor.action.startFindReplaceAction",
+  "args": {
+    "replace": false,
+    "searchString": "",
+    "isRegex": false,
+    "matchCase": false,
+    "preserveCase": false,
+    "wordWrap": false,
+    "cursorMoveOnMatch": false,
+    "seedSearchStringFromSelection": false,
+    "searchScope": "line",
+    "triggerSearchEditorContext": true,
+    "isSmartCase": true,
+    "searchOnType": true,
+    "incremental": true,
+    "autoFindInSelection": false
+  }
 },
 {
-    "key": "ctrl+r",
-    "command": "replace",
-    "when": "editorTextFocus && !editorReadonly"
+  "key": "ctrl+r",
+  "command": "editor.action.startFindReplaceAction",
+  "args": {
+    "replace": false,
+    "searchString": "",
+    "isRegex": false,
+    "matchCase": false,
+    "preserveCase": false,
+    "wordWrap": false,
+    "cursorMoveOnMatch": false,
+    "seedSearchStringFromSelection": false,
+    "searchScope": "line",
+    "triggerSearchEditorContext": true,
+    "isSmartCase": true,
+    "searchOnType": true,
+    "incremental": true,
+    "autoFindInSelection": false,
+    "focusReplaceInput": true
+  }
 },
 {
     "key": "ctrl+g",
